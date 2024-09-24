@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Fund Transfer Successful</h1>
+    </div>
+    <div class="content">
+        <p>Sender's Name: <b><span th:text="${userName}">User</span></b></p>
+        <p>Transfer Amount: <b>LKR <span th:text="${amount}">0.00</span></b></p>
+        <p>Beneficiary Name: <b><span th:text="${recipientName}">Recipient</span></b></p>
+        <p>Transaction ID: <b><span th:text="${transactionId}">123456789</span></b></p>
+        <p>Commercial Bank of Ceylon PLC, No 21, Sir Razik Fareed Mawatha (Formerly known as Bristol Street),
+            P.O. Box 856 Colombo 1, Sri Lanka. Tel: +94(0)11 2353596;+94(0)11 4935536/7,
+            email: DigitalBanking@combank.net 2018 Commercial Bank online, All rights reserved</p>
+    </div>
+    <div class="footer">
+        <p>Thank you for using our service!</p>
+    </div>
+</div>
+</body>
+</html>
